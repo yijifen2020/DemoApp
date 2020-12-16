@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="home"
+            type="com.yjf.yjfshow.ui.HomeFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_home">
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="0dp"
+            android:layout_height="138dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginRight="10dp"
+            android:onClick="@{()->home.clickHeaderBtn()}"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home_header"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="46dp"
+            android:onClick="@{()->home.clickFloatBtn()}"
+            android:src="@mipmap/icon_float"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
