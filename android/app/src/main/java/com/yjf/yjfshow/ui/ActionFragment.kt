@@ -38,15 +38,15 @@ class ActionFragment : Fragment() {
     private fun initData() {
         //轻活动
         val lightActions = listOf(
-            ActionBean(R.mipmap.icon_chips, "adhu8b81d5be237a44dd"),
-            ActionBean(R.mipmap.icon_tree, "adhu26a184532fc345b4"),
-            ActionBean(R.mipmap.icon_redpacket, "adhu08ff8bd54c2f4da1"),
-            ActionBean(R.mipmap.icon_phrase, "adhu670cd216b0cd424a")
+            ActionBean(R.mipmap.icon_chips, "adhu8b81d5be237a44dd",8122),
+            ActionBean(R.mipmap.icon_tree, "adhu26a184532fc345b4",8123),
+            ActionBean(R.mipmap.icon_redpacket, "adhu08ff8bd54c2f4da1",8124),
+            ActionBean(R.mipmap.icon_phrase, "adhu670cd216b0cd424a",8125)
         )
         //养成活动
         val feedActions = listOf(
-            ActionBean(R.mipmap.icon_redfarm, "adhu5f62a396be8b4973"),
-            ActionBean(R.mipmap.icon_pigs, "adhue47a2fed970f46ee")
+            ActionBean(R.mipmap.icon_redfarm, "adhu5f62a396be8b4973",8126),
+            ActionBean(R.mipmap.icon_pigs, "adhue47a2fed970f46ee",8127)
         )
 
 

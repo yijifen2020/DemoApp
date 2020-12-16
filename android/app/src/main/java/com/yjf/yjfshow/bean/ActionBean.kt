@@ -6,5 +6,6 @@ package com.yjf.yjfshow.bean
  */
 data class ActionBean(
     var image: Int,
-    var actionId: String
+    var actionId: String,
+    var mid:Int
 )

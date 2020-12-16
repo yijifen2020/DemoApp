@@ -6,12 +6,11 @@ import android.content.Intent
 import android.util.Log
 import android.widget.FrameLayout
 import android.widget.Toast
+import com.emar.reward.ads.ADListener
 import com.emar.reward.ads.banner.BannerADListener
 import com.emar.reward.ads.banner.EmarBannerAD
-import com.emar.reward.ads.noentrance.NoEntranceAD
-import com.emar.reward.ads.noentrance.OutputADListener
 import com.emar.reward.ads.yjf.YJFFragment
-import com.emar.reward.bean.PicInfoBean
+import com.emar.reward.ads.yjf.YJFNoEntrance
 import com.emar.reward.error.EmarAdError
 import com.emar.reward.manager.EmarAdManager
 import com.yjf.yjfshow.ui.SetUserActivity
@@ -24,7 +23,6 @@ object YJFADUtils {
 
     //媒体ID
     const val MEDIA_ID = "3828"
-
 
 
     /**
@@ -56,51 +54,22 @@ object YJFADUtils {
 
 
     /**
-     * 跳转无入口活动
+     * 无入口
      * @param activity Activity
-     * @param actionId String 广告位ID
+     * @param mid Int
      * @param tag String
      */
-    fun goNoEntranceAD(activity: Activity, actionId: String, tag: String) {
-        val noEntranceAD = NoEntranceAD(activity, actionId)
-        noEntranceAD.setOutputADListener(object : OutputADListener {
-            override fun onPicInfoLoad(infoBean: MutableList<PicInfoBean>?) {
-                Log.d(tag, "onPicInfoLoad")
+    fun goYJFNoEntrance(activity: Activity, mid: Int, tag: String) {
+        val yjfNoEntrance = YJFNoEntrance(activity, mid)
+        yjfNoEntrance.load(object : ADListener {
+            override fun onADLoaded() {
+                Log.d(tag, "onADLoaded")
             }
 
-            override fun onVideoLoad() {
-                Log.d(tag, "onVideoLoad")
-            }
-
-            override fun onADShow() {
-                Log.d(tag, "onPicInfoLoad")
-            }
-
-            override fun onADClick() {
-                Log.d(tag, "onADClick")
-            }
-
-            override fun onReward() {
-                Log.d(tag, "onReward")
-            }
-
-            override fun onVideoComplete() {
-                Log.d(tag, "onVideoComplete")
-            }
-
-            override fun onADClose() {
-                Log.d(tag, "onADClose")
-            }
-
-            override fun onLoadActivity() {
-                Log.d(tag, "onLoadActivity")
-            }
-
-            override fun onError(error: EmarAdError?) {
-                Log.d(tag, "onError:$error")
+            override fun onNoAd(p0: EmarAdError?) {
+                Log.d(tag, "onNoAd")
             }
         })
-        noEntranceAD.loadAD()
     }
 
 

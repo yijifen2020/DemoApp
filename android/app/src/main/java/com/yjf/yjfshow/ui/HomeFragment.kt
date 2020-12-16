@@ -37,12 +37,12 @@ class HomeFragment : Fragment() {
 
     fun clickHeaderBtn(){
         //跳转无入口广告
-        YJFADUtils.goNoEntranceAD(requireActivity(), "adhuf28a233a2beb4a18", TAG)
+        YJFADUtils.goYJFNoEntrance(requireActivity(),8121, TAG)
     }
 
     fun clickFloatBtn() {
         //跳转无入口广告
-        YJFADUtils.goNoEntranceAD(requireActivity(), "adhuc74b66207816423c", TAG)
+        YJFADUtils.goYJFNoEntrance(requireActivity(),8119, TAG)
     }
 
 

@@ -41,9 +41,9 @@ class ActionHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bindData(bean: ActionBean) {
         binding.ivPic.setImageResource(bean.image)
         binding.ivPic.setOnClickListener {
-            YJFADUtils.goNoEntranceAD(
+            YJFADUtils.goYJFNoEntrance(
                 binding.root.context as Activity,
-                bean.actionId,
+                bean.mid,
                 "ActionAdapter"
             )
         }
