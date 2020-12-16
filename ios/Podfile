@@ -8,7 +8,6 @@ target 'YJFShow' do
   pod 'Bytedance-UnionAD', '~> 3.3.6.1'
   
   pod 'Masonry'
-  pod 'CYLTabBarController'
   pod 'YYKit'
 
 end

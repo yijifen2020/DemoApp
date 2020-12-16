@@ -10,3 +10,9 @@
 @implementation ActivitiesModel
 
 @end
+
+@implementation ActivitiesData
++ (NSDictionary *)modelContainerPropertyGenericClass {
+  return @{@"list" : [ActivitiesModel class]};
+}
+@end

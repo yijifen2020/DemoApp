@@ -6,6 +6,7 @@
 //
 
 #import "ActivitiesCell.h"
+#import "ActivitiesModel.h"
 
 @interface ActivitiesCell ()
 @property (nonatomic, strong) UIImageView *imageView;
@@ -21,10 +22,10 @@
     return self;
 }
 
-- (void)configWithData:(id)model
+- (void)configWithData:(ActivitiesModel *)model
 {
     if (!model) { return; }
-    self.imageView.backgroundColor = UIColor.redColor;
+    self.imageView.image = [UIImage imageNamed:model.poster];
 }
 
 #pragma mark-- setup

@@ -11,5 +11,6 @@
 #import "YJFUtils.h"
 #import "UIView+Extension.h"
 #import <Masonry/Masonry.h>
+#import "YJFAd.h"
 
 #endif /* YJFShow_PrefixHeader_pch */

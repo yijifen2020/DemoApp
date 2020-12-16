@@ -7,25 +7,59 @@
 
 #import "IntegralMallVC.h"
 
-@interface IntegralMallVC ()
+#import <HDTAdSDK/YJFEmbeddedWebAd.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#import <AdSupport/AdSupport.h>
 
+@interface IntegralMallVC ()<YJFEmbeddedWebAdDelegate>
+@property (nonatomic, strong) YJFEmbeddedWebAd *embeddedWebAd;
 @end
 
 @implementation IntegralMallVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.embeddedWebAd = [[YJFEmbeddedWebAd alloc] initWithPlacementId:@"100012"];
+    self.embeddedWebAd.delegate = self;
+    self.embeddedWebAd.userId = @"1";
+    
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            UIViewController *subController = [self.embeddedWebAd loadAd];
+            subController.view.frame = self.view.bounds;
+            [self.view addSubview:subController.view];
+            [self addChildViewController:subController];
+        }];
+    } else {
+        UIViewController *subController = [self.embeddedWebAd loadAd];
+        subController.view.frame = self.view.bounds;
+        [self.view addSubview:subController.view];
+        [self addChildViewController:subController];
+    }
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark-- delegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/// 数据加载成功
+/// @param embeddedWebAd 广告实例
+- (void)yjf_embeddedWebAdLoadSuccess:(YJFEmbeddedWebAd *)embeddedWebAd
+{
+    
 }
-*/
+
+/// 加载失败
+/// @param embeddedWebAd 广告实例
+/// @param error 错误信息
+- (void)yjf_embeddedWebAdLoadFailure:(YJFEmbeddedWebAd *)embeddedWebAd failureError:(NSError *)error
+{
+    
+}
+
+/// 需要登录
+/// @param embeddedWebAd 广告实例
+- (void)yjf_embeddedWebAdNeedLogin:(YJFEmbeddedWebAd *)embeddedWebAd
+{
+    
+}
 
 @end
