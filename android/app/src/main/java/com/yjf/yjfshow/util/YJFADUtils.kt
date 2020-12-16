@@ -80,7 +80,7 @@ object YJFADUtils {
      * @return YJFFragment
      */
     fun createYJFFragment(context: Context, mid: Int): YJFFragment {
-        val yjfFragment = YJFFragment.newInstance(mid)
+        val yjfFragment = YJFFragment.newInstance(mid,"1")
         yjfFragment.setOnLoginListener {
             Log.e("YJFADUtil", "need login")
             Toast.makeText(context, "需要设置用户ID~", Toast.LENGTH_SHORT).show()
