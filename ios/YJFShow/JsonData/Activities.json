@@ -1,0 +1,54 @@
+﻿[
+    {
+        "title": "轻活动+积分",
+        "list": [
+            {
+                "poster": "activities_0_0",
+                "mediaId": 3828,
+                "adzoneId": 8122,
+                "adzoneUrl": "https://display.intdmp.com/site_login_ijf.htm?app_key=adhu8b81d5be237a44dd",
+                "appkey": "adhu8b81d5be237a44dd"
+            },
+            {
+                "poster": "activities_0_1",
+                "mediaId": 3828,
+                "adzoneId": 8123,
+                "adzoneUrl": "https://display.intdmp.com/site_login_ijf.htm?app_key=adhu26a184532fc345b4",
+                "appkey": "adhu26a184532fc345b4"
+            },
+            {
+                "poster": "activities_0_2",
+                "mediaId": 3828,
+                "adzoneId": 8124,
+                "adzoneUrl": "https://display.intdmp.com/site_login_ijf.htm?app_key=adhu08ff8bd54c2f4da1",
+                "appkey": "adhu08ff8bd54c2f4da1"
+            },
+            {
+                "poster": "activities_0_3",
+                "mediaId": 3828,
+                "adzoneId": 8125,
+                "adzoneUrl": "https://display.intdmp.com/site_login_ijf.htm?app_key=adhu670cd216b0cd424a",
+                "appkey": "adhu670cd216b0cd424a"
+            }
+        ]
+    },
+    {
+        "title": "养成活动+积分",
+        "list": [
+            {
+                "poster": "activities_1_0",
+                "mediaId": 3828,
+                "adzoneId": 8126,
+                "adzoneUrl": "https://display.intdmp.com/site_login_ijf.htm?app_key=adhu5f62a396be8b4973",
+                "appkey": "adhu5f62a396be8b4973"
+            },
+            {
+                "poster": "activities_1_1",
+                "mediaId": 3828,
+                "adzoneId": 8127,
+                "adzoneUrl": "https://display.intdmp.com/site_login_ijf.htm?app_key=adhue47a2fed970f46ee",
+                "appkey": "adhue47a2fed970f46ee"
+            }
+        ]
+    }
+]

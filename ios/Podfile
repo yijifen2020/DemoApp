@@ -1,0 +1,14 @@
+platform :ios, '9.0'
+inhibit_all_warnings!
+target 'YJFShow' do
+  use_frameworks!
+  #广点通
+  pod 'GDTMobSDK', '~> 4.12.0'
+  #穿山甲
+  pod 'Bytedance-UnionAD', '~> 3.3.6.1'
+  
+  pod 'Masonry'
+  pod 'CYLTabBarController'
+  pod 'YYKit'
+
+end
