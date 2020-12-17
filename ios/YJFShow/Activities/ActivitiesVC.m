@@ -77,11 +77,12 @@
 #pragma mark-- setup
 - (void)setupViews
 {
-    self.navigationController.navigationBar.translucent = NO;
+    self.view.backgroundColor = UIColor.whiteColor;
     
     [self.view addSubview:self.topView];
     [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.right.equalTo(self.view);
+        make.top.equalTo(self.view);
+        make.left.right.equalTo(self.view);
         make.height.mas_equalTo(kScale(118));
     }];
     
@@ -122,7 +123,7 @@
 {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(kScale(kScale(170)), kScale(110));
+        layout.itemSize = CGSizeMake(kScale(170), kScale(110));
         layout.minimumLineSpacing = kScale(10);
         layout.minimumInteritemSpacing = kScale(10);
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;

@@ -90,6 +90,10 @@ CGFloat YJFSafeAreaBottomHeight(void) {
     return bottom;
 }
 
+CGFloat YJFTabbarHeight(void) {
+    return YJFSafeAreaBottomHeight() + 49;
+}
+
 CGFloat YJFNavigationbarHeight(void) {
     return YJFStatusbarHeight() + 44;
 }

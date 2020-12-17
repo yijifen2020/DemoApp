@@ -19,6 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self loadAndShow];
+}
+
+- (void)loadAndShow
+{
     self.embeddedWebAd = [[YJFEmbeddedWebAd alloc] initWithPlacementId:@"100012"];
     self.embeddedWebAd.delegate = self;
     self.embeddedWebAd.userId = @"1";
@@ -27,14 +34,14 @@
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
             UIViewController *subController = [self.embeddedWebAd loadAd];
             subController.view.frame = self.view.bounds;
-            [self.view addSubview:subController.view];
             [self addChildViewController:subController];
+            [self.view addSubview:subController.view];
         }];
     } else {
         UIViewController *subController = [self.embeddedWebAd loadAd];
         subController.view.frame = self.view.bounds;
-        [self.view addSubview:subController.view];
         [self addChildViewController:subController];
+        [self.view addSubview:subController.view];
     }
 }
 

@@ -37,19 +37,26 @@
 #pragma mark-- setup
 - (void)setupViews {
     
-    UIImage *image = [[UIImage imageNamed:@"home_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(kScale(10), kScale(70), self.view.height-kScale(70), kScale(10)) resizingMode:UIImageResizingModeStretch];
-    self.view.layer.contents = (id) image.CGImage;
+    UIImage *image = [UIImage imageNamed:@"home_bg"];
+    UIImageView *bgImg = [[UIImageView alloc] initWithImage:image];
+    bgImg.frame = CGRectMake(0, 0, self.view.width, bgImg.height);
+    [self.view addSubview:bgImg];
     
     [self.view addSubview:self.bannerView];
     [self.bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).offset(kScale(70));
+        if (YJFIsIphoneXSeries()) {
+            make.top.equalTo(self.view).offset(kScale(62));
+            make.height.offset(kScale(108));
+        } else {
+            make.top.equalTo(self.view).offset(kScale(70));
+            make.height.offset(kScale(111));
+        }
         make.left.right.equalTo(self.view).inset(kScale(10));
-        make.height.offset(kScale(111));
     }];
     
     [self.view addSubview:self.iconView];
     [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.view).inset(kScale(100)+YJFSafeAreaBottomHeight());
+        make.bottom.equalTo(self.view).inset(kScale(50)+YJFSafeAreaBottomHeight()+YJFTabbarHeight());
         make.right.equalTo(self.view).inset(kScale(10));
         make.height.width.offset(kScale(50));
     }];
