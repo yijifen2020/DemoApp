@@ -29,20 +29,28 @@
     self.embeddedWebAd = [[YJFEmbeddedWebAd alloc] initWithPlacementId:@"100012"];
     self.embeddedWebAd.delegate = self;
     self.embeddedWebAd.userId = @"1";
-    
+
     if (@available(iOS 14, *)) {
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-            UIViewController *subController = [self.embeddedWebAd loadAd];
-            subController.view.frame = self.view.bounds;
-            [self addChildViewController:subController];
-            [self.view addSubview:subController.view];
+            if ([[NSThread currentThread] isMainThread]) {
+                [self loadAd];
+            } else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self loadAd];
+                });
+            }
         }];
     } else {
-        UIViewController *subController = [self.embeddedWebAd loadAd];
-        subController.view.frame = self.view.bounds;
-        [self addChildViewController:subController];
-        [self.view addSubview:subController.view];
+        [self loadAd];
     }
+}
+
+- (void)loadAd
+{
+    UIViewController *subController = [self.embeddedWebAd loadAd];
+    subController.view.frame = self.view.bounds;
+    [self addChildViewController:subController];
+    [self.view addSubview:subController.view];
 }
 
 #pragma mark-- delegate
