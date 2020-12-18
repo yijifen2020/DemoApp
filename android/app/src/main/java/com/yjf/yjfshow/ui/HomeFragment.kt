@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.yjf.yjfshow.BuildConfig
 import com.yjf.yjfshow.R
 import com.yjf.yjfshow.databinding.FragmentHomeBinding
 import com.yjf.yjfshow.util.YJFADUtils
@@ -31,7 +32,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        mBinding.tvVersion.text = "v${BuildConfig.VERSION_NAME}"
     }
 
 
