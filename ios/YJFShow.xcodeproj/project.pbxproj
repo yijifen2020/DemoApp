@@ -51,6 +51,7 @@
 		EE5F43362589A49800D03F64 /* ActivitiesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivitiesVC.m; sourceTree = "<group>"; };
 		EE5F433A2589A4A700D03F64 /* IntegralMallVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegralMallVC.h; sourceTree = "<group>"; };
 		EE5F433B2589A4A700D03F64 /* IntegralMallVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegralMallVC.m; sourceTree = "<group>"; };
+		EEE944E42591E609001BFF20 /* ActivitiesDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivitiesDefine.h; sourceTree = "<group>"; };
 		EEF63E982588A6C40054A891 /* YJFShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJFShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF63E9B2588A6C40054A891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEF63E9C2588A6C40054A891 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,12 +157,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EE0CF3F52589EF7000CE7355 /* JsonData */ = {
+		EE0CF3F52589EF7000CE7355 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				EE0CF3F62589EF8700CE7355 /* Activities.json */,
+				EEE944E42591E609001BFF20 /* ActivitiesDefine.h */,
 			);
-			path = JsonData;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		EE0CF423258A032400CE7355 /* HDTAdSDK */ = {
@@ -228,7 +230,7 @@
 				EE5F43312589A3A100D03F64 /* Home */,
 				EE5F43322589A3AA00D03F64 /* Activities */,
 				EE5F43332589A3F200D03F64 /* IntegralMall */,
-				EE0CF3F52589EF7000CE7355 /* JsonData */,
+				EE0CF3F52589EF7000CE7355 /* Data */,
 				EE0CF3BE2589AF1000CE7355 /* Utils */,
 				EE0CF3C12589AF9200CE7355 /* Supporting Files */,
 			);
@@ -523,7 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D4Y694PBV9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D4Y694PBV9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

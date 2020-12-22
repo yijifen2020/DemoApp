@@ -26,7 +26,7 @@
 
 - (void)loadAndShow
 {
-    self.embeddedWebAd = [[YJFEmbeddedWebAd alloc] initWithPlacementId:@"100012"];
+    self.embeddedWebAd = [[YJFEmbeddedWebAd alloc] initWithPlacementId:IntegralMallID];
     self.embeddedWebAd.delegate = self;
     self.embeddedWebAd.userId = @"1";
 

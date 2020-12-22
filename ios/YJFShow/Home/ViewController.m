@@ -26,12 +26,12 @@
 #pragma mark-- action
 - (void)bannerAction
 {
-    [[[YJFAd alloc] init] loadAdAndShow:@"8130" viewController:self];
+    [[[YJFAd alloc] init] loadAdAndShow:BannerID viewController:self];
 }
 
 - (void)iconAction
 {
-    [[[YJFAd alloc] init] loadAdAndShow:@"8120" viewController:self];
+    [[[YJFAd alloc] init] loadAdAndShow:IconID viewController:self];
 }
 
 #pragma mark-- setup
