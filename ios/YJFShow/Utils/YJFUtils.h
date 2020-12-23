@@ -50,6 +50,7 @@ BOOL YJFLowMemory(void);
 BOOL YJFIsIphoneXSeries(void);
 CGFloat YJFStatusbarHeight(void);
 CGFloat YJFSafeAreaBottomHeight(void);
+CGFloat YJFTabbarHeight(void);
 CGFloat YJFNavigationbarHeight(void);
 
 UIImage *YJFSnapshotView(UIView *);

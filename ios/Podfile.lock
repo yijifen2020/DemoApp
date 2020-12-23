@@ -1,44 +1,32 @@
 PODS:
   - Bytedance-UnionAD (3.3.6.1)
-  - CYLTabBarController (1.29.0):
-    - CYLTabBarController/Core (= 1.29.0)
-  - CYLTabBarController/Core (1.29.0)
   - GDTMobSDK (4.12.0):
     - GDTMobSDK/GDTMobSDK (= 4.12.0)
   - GDTMobSDK/GDTMobSDK (4.12.0)
   - Masonry (1.1.0)
-  - SDWebImage (5.10.0):
-    - SDWebImage/Core (= 5.10.0)
-  - SDWebImage/Core (5.10.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - Bytedance-UnionAD (~> 3.3.6.1)
-  - CYLTabBarController
   - GDTMobSDK (~> 4.12.0)
   - Masonry
-  - SDWebImage
   - YYKit
 
 SPEC REPOS:
   trunk:
     - Bytedance-UnionAD
-    - CYLTabBarController
     - GDTMobSDK
     - Masonry
-    - SDWebImage
     - YYKit
 
 SPEC CHECKSUMS:
   Bytedance-UnionAD: f496daec3dbd590014ed1a9facee328ec17f064d
-  CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
   GDTMobSDK: 93befcc3c896d0252fbc8902e64dbd8acaa8368b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 961e81312b9e36c6277974a0af53381252da3f96
+PODFILE CHECKSUM: dd6864bc94593473b8e644056832475d6f651867
 
 COCOAPODS: 1.10.0.beta.1

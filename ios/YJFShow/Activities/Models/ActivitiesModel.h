@@ -11,10 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ActivitiesModel : NSObject
 @property (nonatomic, copy) NSString *poster;
-@property (nonatomic, assign) NSInteger mediaId;
-@property (nonatomic, assign) NSInteger adzoneId;
+@property (nonatomic, copy) NSString *adzoneId;
 @property (nonatomic, copy) NSString *adzoneUrl;
 @property (nonatomic, copy) NSString *appkey;
+@end
+
+@interface ActivitiesData : NSObject
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, strong) NSArray<ActivitiesModel *> *list;
 @end
 
 NS_ASSUME_NONNULL_END

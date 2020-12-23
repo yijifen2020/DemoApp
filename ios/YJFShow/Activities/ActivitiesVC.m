@@ -9,6 +9,7 @@
 #import "ActivitiesCell.h"
 #import "ActivitiesHeader.h"
 #import "ActivitiesModel.h"
+#import <YYKit/NSObject+YYModel.h>
 
 @interface ActivitiesVC ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UIImageView *topView;
@@ -27,28 +28,28 @@
 
 - (void)initData
 {
-//    activities_0_3
-    
     NSString *dataJson = [YJFUtils getJsonDataJsonname:@"Activities"];
-    
+    self.dataSource = [[NSArray modelArrayWithClass:[ActivitiesData class] json:dataJson] mutableCopy];
 }
 
 #pragma mark-- delegate
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    return self.dataSource.count;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 4;
+    ActivitiesData *data = self.dataSource[section];
+    return [data.list count];
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ActivitiesCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([ActivitiesCell class]) forIndexPath:indexPath];
     cell.backgroundColor = UIColor.whiteColor;
-    [cell configWithData:@{}];
+    ActivitiesData *data = self.dataSource[indexPath.section];
+    [cell configWithData:data.list[indexPath.row]];
     return cell;
 }
 
@@ -58,7 +59,8 @@
     
      if (kind == UICollectionElementKindSectionHeader) {
          ActivitiesHeader *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([ActivitiesHeader class]) forIndexPath:indexPath];
-         headerView.title = @"轻活动+积分";
+         ActivitiesData *headerData = self.dataSource[indexPath.section];
+         headerView.title = headerData.title;
          reusableview = headerView;
      }
     
@@ -67,22 +69,25 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    ActivitiesData *data = self.dataSource[indexPath.section];
+    ActivitiesModel *model = data.list[indexPath.row];
+    [[[YJFAd alloc] init] loadAdAndShow:model.adzoneId viewController:self];
 }
 
 #pragma mark-- setup
 - (void)setupViews
 {
-    self.navigationController.navigationBar.translucent = NO;
+    self.view.backgroundColor = UIColor.whiteColor;
     
     [self.view addSubview:self.topView];
     [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.right.equalTo(self.view);
+        make.top.equalTo(self.view);
+        make.left.right.equalTo(self.view);
         make.height.mas_equalTo(kScale(118));
     }];
     
     [self.view addSubview:self.bgView];
-    self.bgView.frame = CGRectMake(0, kScale(107), kScreenWidth, kScreenHeight-YJFNavigationbarHeight()-kScale(107));
+    self.bgView.frame = CGRectMake(0, kScale(107), kScreenWidth, kScreenHeight-kScale(107));
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bgView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(kScale(15),kScale(15))];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame = self.bgView.bounds;
@@ -118,7 +123,7 @@
 {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(kScale(kScale(170)), kScale(110));
+        layout.itemSize = CGSizeMake(kScale(170), kScale(110));
         layout.minimumLineSpacing = kScale(10);
         layout.minimumInteritemSpacing = kScale(10);
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;

@@ -7,29 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1147BF6C137C2E294B8E666E /* Pods_YJFShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4B4CFA62293985614F504D /* Pods_YJFShow.framework */; };
+		EE0A9327258A2CE400C26CFF /* YJFAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0A9326258A2CE400C26CFF /* YJFAd.m */; };
 		EE0CF3C92589B12C00CE7355 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0CF3C82589B12C00CE7355 /* UIView+Extension.m */; };
 		EE0CF3E32589BD4D00CE7355 /* ActivitiesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0CF3E22589BD4D00CE7355 /* ActivitiesCell.m */; };
 		EE0CF3E82589E15700CE7355 /* YJFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0CF3E72589E15700CE7355 /* YJFUtils.m */; };
 		EE0CF3ED2589E3F800CE7355 /* ActivitiesHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0CF3EC2589E3F800CE7355 /* ActivitiesHeader.m */; };
 		EE0CF3F22589EA2600CE7355 /* ActivitiesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0CF3F12589EA2600CE7355 /* ActivitiesModel.m */; };
 		EE0CF3F72589EF8700CE7355 /* Activities.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0CF3F62589EF8700CE7355 /* Activities.json */; };
+		EE0CF426258A032400CE7355 /* HDTResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE0CF424258A032400CE7355 /* HDTResources.bundle */; };
+		EE0CF452258A07EB00CE7355 /* HDTAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0CF44F258A07E200CE7355 /* HDTAdSDK.framework */; };
+		EE0CF455258A07F100CE7355 /* Pods_YJFShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4B4CFA62293985614F504D /* Pods_YJFShow.framework */; };
 		EE5F43372589A49800D03F64 /* ActivitiesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5F43362589A49800D03F64 /* ActivitiesVC.m */; };
 		EE5F433C2589A4A700D03F64 /* IntegralMallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5F433B2589A4A700D03F64 /* IntegralMallVC.m */; };
-		EE5F43412589A5A600D03F64 /* YJFMainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5F43402589A5A600D03F64 /* YJFMainRootViewController.m */; };
 		EEF63E9D2588A6C40054A891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF63E9C2588A6C40054A891 /* AppDelegate.m */; };
 		EEF63EA32588A6C40054A891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF63EA22588A6C40054A891 /* ViewController.m */; };
 		EEF63EA62588A6C40054A891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF63EA42588A6C40054A891 /* Main.storyboard */; };
 		EEF63EA82588A6C60054A891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF63EA72588A6C60054A891 /* Assets.xcassets */; };
 		EEF63EAB2588A6C60054A891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF63EA92588A6C60054A891 /* LaunchScreen.storyboard */; };
 		EEF63EAE2588A6C60054A891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF63EAD2588A6C60054A891 /* main.m */; };
-		EEF63ECE2588C5F00054A891 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF63ECD2588C5F00054A891 /* MainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5CA8F05F9B971F98A9B17EB0 /* Pods-YJFShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJFShow.debug.xcconfig"; path = "Target Support Files/Pods-YJFShow/Pods-YJFShow.debug.xcconfig"; sourceTree = "<group>"; };
 		9A4B4CFA62293985614F504D /* Pods_YJFShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJFShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEE0AB71D0D78C99DBB0565 /* Pods-YJFShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJFShow.release.xcconfig"; path = "Target Support Files/Pods-YJFShow/Pods-YJFShow.release.xcconfig"; sourceTree = "<group>"; };
+		EE0A9325258A2CE400C26CFF /* YJFAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJFAd.h; sourceTree = "<group>"; };
+		EE0A9326258A2CE400C26CFF /* YJFAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJFAd.m; sourceTree = "<group>"; };
 		EE0CF3C02589AF8D00CE7355 /* YJFShow-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YJFShow-PrefixHeader.pch"; sourceTree = "<group>"; };
 		EE0CF3C72589B12C00CE7355 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		EE0CF3C82589B12C00CE7355 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -42,12 +45,13 @@
 		EE0CF3F02589EA2600CE7355 /* ActivitiesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivitiesModel.h; sourceTree = "<group>"; };
 		EE0CF3F12589EA2600CE7355 /* ActivitiesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivitiesModel.m; sourceTree = "<group>"; };
 		EE0CF3F62589EF8700CE7355 /* Activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Activities.json; sourceTree = "<group>"; };
+		EE0CF424258A032400CE7355 /* HDTResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HDTResources.bundle; sourceTree = "<group>"; };
+		EE0CF44F258A07E200CE7355 /* HDTAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDTAdSDK.framework; sourceTree = "<group>"; };
 		EE5F43352589A49800D03F64 /* ActivitiesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivitiesVC.h; sourceTree = "<group>"; };
 		EE5F43362589A49800D03F64 /* ActivitiesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivitiesVC.m; sourceTree = "<group>"; };
 		EE5F433A2589A4A700D03F64 /* IntegralMallVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegralMallVC.h; sourceTree = "<group>"; };
 		EE5F433B2589A4A700D03F64 /* IntegralMallVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegralMallVC.m; sourceTree = "<group>"; };
-		EE5F433F2589A5A600D03F64 /* YJFMainRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJFMainRootViewController.h; sourceTree = "<group>"; };
-		EE5F43402589A5A600D03F64 /* YJFMainRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJFMainRootViewController.m; sourceTree = "<group>"; };
+		EEE944E42591E609001BFF20 /* ActivitiesDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivitiesDefine.h; sourceTree = "<group>"; };
 		EEF63E982588A6C40054A891 /* YJFShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJFShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF63E9B2588A6C40054A891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEF63E9C2588A6C40054A891 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,8 +62,6 @@
 		EEF63EAA2588A6C60054A891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEF63EAC2588A6C60054A891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEF63EAD2588A6C60054A891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EEF63ECC2588C5F00054A891 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
-		EEF63ECD2588C5F00054A891 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1147BF6C137C2E294B8E666E /* Pods_YJFShow.framework in Frameworks */,
+				EE0CF452258A07EB00CE7355 /* HDTAdSDK.framework in Frameworks */,
+				EE0CF455258A07F100CE7355 /* Pods_YJFShow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EE0A9324258A2CB900C26CFF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A9325258A2CE400C26CFF /* YJFAd.h */,
+				EE0A9326258A2CE400C26CFF /* YJFAd.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		EE0CF3BE2589AF1000CE7355 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,8 @@
 		EE0CF3C12589AF9200CE7355 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EEF63E9B2588A6C40054A891 /* AppDelegate.h */,
+				EEF63E9C2588A6C40054A891 /* AppDelegate.m */,
 				EEF63EA42588A6C40054A891 /* Main.storyboard */,
 				EEF63EA72588A6C60054A891 /* Assets.xcassets */,
 				EEF63EA92588A6C60054A891 /* LaunchScreen.storyboard */,
@@ -143,13 +157,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EE0CF3F52589EF7000CE7355 /* JsonData */ = {
+		EE0CF3F52589EF7000CE7355 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				EE0CF3F62589EF8700CE7355 /* Activities.json */,
+				EEE944E42591E609001BFF20 /* ActivitiesDefine.h */,
 			);
-			path = JsonData;
+			path = Data;
 			sourceTree = "<group>";
+		};
+		EE0CF423258A032400CE7355 /* HDTAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CF44F258A07E200CE7355 /* HDTAdSDK.framework */,
+				EE0CF424258A032400CE7355 /* HDTResources.bundle */,
+			);
+			path = HDTAdSDK;
+			sourceTree = SOURCE_ROOT;
 		};
 		EE5F43312589A3A100D03F64 /* Home */ = {
 			isa = PBXGroup;
@@ -201,28 +225,16 @@
 		EEF63E9A2588A6C40054A891 /* YJFShow */ = {
 			isa = PBXGroup;
 			children = (
-				EEF63E9B2588A6C40054A891 /* AppDelegate.h */,
-				EEF63E9C2588A6C40054A891 /* AppDelegate.m */,
+				EE0CF423258A032400CE7355 /* HDTAdSDK */,
+				EE0A9324258A2CB900C26CFF /* Common */,
 				EE5F43312589A3A100D03F64 /* Home */,
 				EE5F43322589A3AA00D03F64 /* Activities */,
 				EE5F43332589A3F200D03F64 /* IntegralMall */,
-				EEF63ED02588C5F90054A891 /* Base */,
-				EE0CF3F52589EF7000CE7355 /* JsonData */,
+				EE0CF3F52589EF7000CE7355 /* Data */,
 				EE0CF3BE2589AF1000CE7355 /* Utils */,
 				EE0CF3C12589AF9200CE7355 /* Supporting Files */,
 			);
 			path = YJFShow;
-			sourceTree = "<group>";
-		};
-		EEF63ED02588C5F90054A891 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				EEF63ECC2588C5F00054A891 /* MainTabBarController.h */,
-				EEF63ECD2588C5F00054A891 /* MainTabBarController.m */,
-				EE5F433F2589A5A600D03F64 /* YJFMainRootViewController.h */,
-				EE5F43402589A5A600D03F64 /* YJFMainRootViewController.m */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +299,7 @@
 				EE0CF3F72589EF8700CE7355 /* Activities.json in Resources */,
 				EEF63EAB2588A6C60054A891 /* LaunchScreen.storyboard in Resources */,
 				EEF63EA82588A6C60054A891 /* Assets.xcassets in Resources */,
+				EE0CF426258A032400CE7355 /* HDTResources.bundle in Resources */,
 				EEF63EA62588A6C40054A891 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,13 +374,12 @@
 				EEF63EA32588A6C40054A891 /* ViewController.m in Sources */,
 				EE0CF3F22589EA2600CE7355 /* ActivitiesModel.m in Sources */,
 				EEF63E9D2588A6C40054A891 /* AppDelegate.m in Sources */,
-				EEF63ECE2588C5F00054A891 /* MainTabBarController.m in Sources */,
 				EE5F433C2589A4A700D03F64 /* IntegralMallVC.m in Sources */,
 				EE0CF3E82589E15700CE7355 /* YJFUtils.m in Sources */,
 				EE0CF3ED2589E3F800CE7355 /* ActivitiesHeader.m in Sources */,
-				EE5F43412589A5A600D03F64 /* YJFMainRootViewController.m in Sources */,
 				EE0CF3C92589B12C00CE7355 /* UIView+Extension.m in Sources */,
 				EEF63EAE2588A6C60054A891 /* main.m in Sources */,
+				EE0A9327258A2CE400C26CFF /* YJFAd.m in Sources */,
 				EE0CF3E32589BD4D00CE7355 /* ActivitiesCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,7 +525,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D4Y694PBV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HDTAdSDK",
+				);
 				GCC_PREFIX_HEADER = "YJFShow/Supporting Files/YJFShow-PrefixHeader.pch";
 				INFOPLIST_FILE = "YJFShow/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -534,7 +551,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D4Y694PBV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HDTAdSDK",
+				);
 				GCC_PREFIX_HEADER = "YJFShow/Supporting Files/YJFShow-PrefixHeader.pch";
 				INFOPLIST_FILE = "YJFShow/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
