@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         mBinding.ivTabAction.clearColorFilter()
         mBinding.ivTabStore.clearColorFilter()
         mBinding.mainVp.adapter = TabPagerAdapter(this)
+        mBinding.mainVp.isUserInputEnabled = false
         mBinding.mainVp.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 when (position) {
